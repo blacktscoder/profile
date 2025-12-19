@@ -1,0 +1,39 @@
+---
+title: "Building a Payment Gateway Backend: Lessons in Trust and Failure"
+description: "What building a payment backend taught me about reliability, failure, and responsibility."
+image: "/images/gallery/payment-gateway-backend.jpg"
+publishedAt: "2025-02-01"
+---
+
+Payments change how you think about backend engineering.
+
+This wasn’t just another API. Every request represented real money, real users, and real consequences if something went wrong.
+
+## Everything Becomes About Trust
+
+The first thing I learned is that payment systems are not about features — they’re about **trust**.
+
+- Requests must be idempotent
+- Errors must be explicit
+- State transitions must be predictable
+
+You can’t afford “almost correct.”
+
+## Failure Is the Default Case
+
+Networks fail. Clients retry. Messages duplicate.
+
+Instead of fighting this, I designed the system to **expect failure**:
+- Safe retries
+- Transaction boundaries
+- Clear audit trails
+
+Once failure became a first-class concept, the system became calmer.
+
+## The Backend Is the Product
+
+In payment systems, users never see the backend — but they *feel* it.
+
+When payments work silently, you’ve done your job.
+
+That mindset changed how I design every backend system since.

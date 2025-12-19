@@ -1,0 +1,40 @@
+---
+title: "Background Jobs, Queues, and Why Not Everything Belongs in an API Request"
+description: "How queues and async processing make backend systems more reliable."
+image: "/images/gallery/background-jobs-queues.jpg"
+publishedAt: "2025-01-22"
+---
+
+If your API request takes more than a second, it probably doesn’t belong there.
+
+## What Should Be Async?
+
+Move these out of request cycles:
+- Emails
+- Notifications
+- File processing
+- Data synchronization
+- Heavy computations
+
+Users don’t need to wait for everything.
+
+## Queues Improve Reliability
+
+Queues provide:
+- Retry mechanisms
+- Failure isolation
+- Traffic smoothing
+
+They turn spikes into manageable workloads.
+
+## Event-Driven Thinking
+
+Instead of asking “what should this endpoint do?”  
+Ask “what events should this action trigger?”
+
+This mindset leads to cleaner systems and better scalability.
+
+## Final Thought
+
+Fast APIs are rarely fast because of raw speed.  
+They’re fast because they **do less**.
