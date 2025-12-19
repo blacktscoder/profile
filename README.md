@@ -1,50 +1,31 @@
 
----
-
-````md
 # Tatenda Makandigona — Portfolio
 
 This repository contains the source code for my personal portfolio website.
 
-It’s a space where I document what I’m building, what I’ve learned, and how I think about backend engineering, systems, and software in general. The site includes project write-ups, blog posts, and background information about my work.
+The site is used to showcase projects I’ve worked on and to write short, reflective posts about backend engineering, software systems, and lessons learned from building real applications.
 
-🌐 **Live site:** _(add your Vercel / custom domain URL here once deployed)_
-
----
-
-## About the Site
-
-This portfolio is intentionally simple and content-driven.
-
-Instead of acting as a résumé replacement, it focuses on:
-- Writing about real projects I’ve worked on
-- Sharing lessons learned from building backend systems
-- Documenting ideas and engineering decisions over time
-
-Most content is written in **MDX**, so posts feel closer to essays than documentation.
+🌐 Live site: _(add URL after deployment)_
 
 ---
 
 ## Tech Stack
 
-- **Framework:** Next.js
-- **Content:** MDX (blog posts & projects)
-- **UI System:** Once UI (customized)
-- **Language:** TypeScript
-- **Deployment:** Vercel
-
-The codebase is structured to be easy to extend, not over-engineered.
+- Next.js
+- TypeScript
+- MDX for content
+- Once UI
 
 ---
 
-## Local Development
+## Development
 
-### 1. Install dependencies
+Install dependencies:
 ```bash
 npm install
 ````
 
-### 2. Run the dev server
+Run the dev server:
 
 ```bash
 npm run dev
@@ -60,77 +41,21 @@ http://localhost:3000
 
 ## Writing Content
 
-### Blog posts
+* Blog posts: `app/blog/posts/`
+* Projects: `app/work/projects/`
 
-Add a new `.mdx` file to:
-
-```
-app/blog/posts/
-```
-
-Each post supports frontmatter like:
-
-```yaml
----
-title: "Post title"
-description: "Short summary"
-date: "2025-02-01"
----
-```
-
-### Projects
-
-Project write-ups live in:
-
-```
-app/work/projects/
-```
-
-These are written as reflective articles rather than technical documentation.
+Content is written in MDX and focuses on project stories and engineering insights rather than documentation.
 
 ---
 
-## Customization
+## Credit
 
-Most site content and metadata can be adjusted from:
+This project is built on top of the **Magic Portfolio** template by **Once UI**
+[https://once-ui.com](https://once-ui.com)
 
-```
-src/resources/
-```
-
-This includes:
-
-* Personal information
-* Social links
-* Page visibility
-* Navigation labels
+The template has been customized for personal use.
+All content and project write-ups are my own.
 
 ---
 
-## License & Credits
-
-This project is built on top of **Once UI** and the original Magic Portfolio template.
-
-The template has been customized and adapted for personal use and content.
-All written content and project descriptions are my own.
-
-Template credit:
-
-* Once UI — [https://once-ui.com](https://once-ui.com)
-
----
-
-## Contact
-
-* GitHub: [https://github.com/blacktscoder](https://github.com/blacktscoder)
-* Email: [example@gmail.com](mailto:example@gmail.com)
-
----
-
-© Tatenda Makandigona. All rights reserved.
-
-```
-
----
-
-
+© Tatenda Makandigona
